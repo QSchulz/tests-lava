@@ -1,0 +1,10 @@
+metadata:
+    format: Lava-Test Test Definition 1.0
+    name: Crypto tests
+    description: Atmel crypto tests
+
+run:
+    steps:
+        - bash -x ./crypto/run-test.sh aes tdes sha
+    parse:
+        pattern: (?P<test_case_id>[^:]+):\\s(?P<result>\\w+)
