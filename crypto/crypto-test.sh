@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 # crypto IP test cases
 #

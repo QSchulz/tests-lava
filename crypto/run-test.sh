@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 # Copyright (C) 2012, Linaro Limited.
 # Copyright (C) 2012, Atmel.
