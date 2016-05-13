@@ -22,7 +22,10 @@
 
 CRYPTO_IPS="$*"
 
-if [ ! -f sh-test-lib ]; then
+SCRIPT=$(readlink -f "$0")
+SCRIPTPATH=$(dirname "$SCRIPT")
+
+if [ ! -f $SCRIPTPATH/sh-test-lib ]; then
     echo "ERROR: No sh test library" >&2
     exit 1
 fi

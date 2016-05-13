@@ -28,7 +28,10 @@ OUT=0
 CRYPTO_IP_LIST="aes tdes sha"
 CRYPTO_IPS="$*"
 
-source sh-test-lib
+SCRIPT=$(readlink -f "$0")
+SCRIPTPATH=$(dirname "$SCRIPT")
+
+source $SCRIPTPATH/sh-test-lib
 
 ## crypto library functions
 crypto_grep_proper_version () {
