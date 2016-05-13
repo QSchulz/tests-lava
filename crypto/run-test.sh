@@ -30,7 +30,7 @@ if [ ! -f $SCRIPTPATH/sh-test-lib ]; then
     exit 1
 fi
 
-source sh-test-lib
+source $SCRIPTPATH/sh-test-lib
 
 # check we're root
 if ! check_root; then
