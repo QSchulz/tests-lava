@@ -49,4 +49,4 @@ for ip in ${CRYPTO_IPS}; do
 done
 
 # run the tests
-/bin/sh -x ./crypto-test.sh ${CRYPTO_IPS}
+/bin/sh -x $SCRIPTPATH/crypto-test.sh ${CRYPTO_IPS}
