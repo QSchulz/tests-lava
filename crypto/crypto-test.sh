@@ -28,7 +28,7 @@ OUT=0
 CRYPTO_IP_LIST="aes tdes sha"
 CRYPTO_IPS="$*"
 
-source include/sh-test-lib
+source sh-test-lib
 
 ## crypto library functions
 crypto_grep_proper_version () {

@@ -22,12 +22,12 @@
 
 CRYPTO_IPS="$*"
 
-if [ ! -f include/sh-test-lib ]; then
+if [ ! -f sh-test-lib ]; then
     echo "ERROR: No sh test library" >&2
     exit 1
 fi
 
-source include/sh-test-lib
+source sh-test-lib
 
 # check we're root
 if ! check_root; then
