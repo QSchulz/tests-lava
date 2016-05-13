@@ -63,7 +63,7 @@ pass_test_measure() {
 }
 
 check_root() {
-    if [ $UID -eq 0 ]; then
+    if [ $(id -u) -eq 0 ]; then
         return 0
     else
         return 1
